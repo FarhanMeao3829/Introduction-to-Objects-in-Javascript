@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nam Nam</title>
+    <style>
+      p {
+        font-size: 30px;
+        color: rgb(255, 136, 0);
+        font-family: cursive;
+        font-weight: bold;
+        text-shadow: 1px 3px 7px black;
+      }
+
+      h3 {
+        font-family: cursive;
+        font-weight: bold;
+        color: rgb(255, 136, 0);
+        font-size: 40px;
+        text-shadow: 1px 3px 7px black;
+      }
+
+      body {
+        background-color: rgb(119, 162, 242);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Finding the sum of numbers with help of Arguments Objects</h3>
+    <p id="result"></p>
+
+    <script>
+      function findSum() {
+        var sum = 0;
+
+        for (i = 0; i < arguments.length; i++) {
+          sum = sum + arguments[i];
+        }
+        return sum;
+      }
+
+      document.getElementById("result").innerHTML = findSum(
+        2,
+        4,
+        2,
+        75,
+        333,
+        5,
+        999,
+        111,
+        385,
+        792,
+        610,
+        3954,
+        2828,
+        1
+      );
+    </script>
+  </body>
+</html>
